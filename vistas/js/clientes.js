@@ -1,11 +1,9 @@
 $(".btnCargarDatos").click(function(){
     var idClientes = $(this).attr("idClientes");
-    
+    console.log("Datos id",idClientes);
     var datos  = new FormData();
     datos.append("idClientes", idClientes);
-    datos.append("edit", edit);
-    console.log("Datos id",idClientes);
-    
+    datos.append("edit", "edit");
 
     $.ajax({
         url: "ajax/ajaxClientes.php",
