@@ -6,10 +6,9 @@ class ajaxClientes{
     public $idClientes;
 
     public function cargarDatos(){
-        $tabla = "cliente";
         $parametro = "cliente";
         $id = $this->idClientes;
-        $datos = ControladorClientes::ctrlCargarClientes($tabla,$parametro,$id);
+        $datos = ControladorClientes::ctrlCargarClientes($parametro,$id);
         echo json_encode($datos);
 
     }
