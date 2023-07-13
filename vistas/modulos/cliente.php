@@ -171,7 +171,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Cédula de identidad" name="modicar_cedula" id="modicar_cedula" required>
+                                    <input type="text" class="form-control" placeholder="Cédula de identidad" name="modificar_cedula" id="modificar_cedula" required>
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
@@ -187,7 +187,7 @@
                                     </div>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Direccion" name="Moficar_direccion" id="Moficar_direccion" required>
+                                    <input type="text" class="form-control" placeholder="Direccion" name="modificar_direccion" id="modificar_direccion" required>
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-route"></i></span>
                                     </div>
