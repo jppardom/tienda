@@ -19,6 +19,7 @@ $(".btnCargarDatos").click(function(){
             $('#modificar_direccion').val(respuesta['direccion'])
             $('#modificar_telefono').val(respuesta['telefono'])
             $('#modificar_correo').val(respuesta['email'])
+            $('#id').val(respuesta['id_cliente'])
         }
     });
 

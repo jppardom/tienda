@@ -203,6 +203,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="hidden" name= "id" id="id">
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary">Actualizar Datos</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
