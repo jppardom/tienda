@@ -209,6 +209,7 @@
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                                 <?php
                                 #Código php para cagar datos al modal
+                                $objUsuario->ctrlActualizarCliente();
                                 ?>
                             </div>
                         </div>
