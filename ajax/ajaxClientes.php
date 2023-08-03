@@ -16,7 +16,7 @@ class ajaxClientes{
         $id = $this->idClientes;
         $datos = ControladorClientes::ctrlEliminarClientes($id);
         echo json_encode($datos);
-    }
+    } 
     
 }
 
