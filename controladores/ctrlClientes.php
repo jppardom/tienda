@@ -1,17 +1,20 @@
 <?php
+
+use function PHPSTORM_META\map;
+
 class ControladorClientes{
     //Función para recibir los datos para gurardar cliente
     public function crtlGuardarCliente(){
         
         if (isset($_POST['cedula']) &&
             isset($_POST['nombre']) &&
-            isset($_POST['apellido']) &&
-            isset($_POST['direccion']) &&
-            isset($_POST['telefono']) &&
-            isset($_POST['correo'])){
+            isset($_POST['apellido']) &&   
+            isset($_POST['direccion']) &&       
+            isset($_POST['telefono']) &&       
+            isset($_POST['correo'])){ 
                 $tabla ="cliente";
                 $data = array('cedula' => $_POST['cedula'],
-                             'nombre' => $_POST['nombre'],
+                             'nombre' => $_POST['nombre'],    
                              'apellidos' => $_POST['apellido'],
                              'direccion' => $_POST['direccion'],
                              'telefono' => $_POST['telefono'],
@@ -56,6 +59,8 @@ class ControladorClientes{
         return $datosCliente;
     }
 
+    
+
     //Función par actualizar datos
     public static function ctrlActualizarCliente(){
         if (isset($_POST['modificar_cedula']) &&
@@ -99,9 +104,17 @@ class ControladorClientes{
                     }
                 })
               </script>';
-
+                                                     
             }
         }
 
     }
+
+   public static function ctrlEliminarClientes($id) {
+    
+    $tabla = "cliente"; 
+    $datosCliente = ModeloCliente::mdlEliminarCliente($tabla, $id);
+    return $datosCliente;
+   }
 }
+

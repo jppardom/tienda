@@ -128,7 +128,7 @@
                     <td>
                         <div class='btn btn-group'>
                         <button class='btn btn-warning btnCargarDatos' idClientes='".$valor['id_cliente']."'  data-toggle='modal' data-target='#modificar'><i class='fas fa-edit'></i></button>
-                        <button class='btn btn-danger'><i class='fas fa-trash-alt'></i></button>
+                        <button class='btn btn-danger btnEliminarDatos' idClientes='".$valor['id_cliente']."'><i class='fas fa-trash-alt'></i></button>
                         </div>
                     </td>
                   </tr>";

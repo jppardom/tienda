@@ -10,18 +10,23 @@ class ajaxClientes{
         $id = $this->idClientes;
         $datos = ControladorClientes::ctrlCargarClientes($parametro,$id);
         echo json_encode($datos);
-
     }
-
+    public function eliminarDatos(){
+        $parametro = "cliente";
+        $id = $this->idClientes;
+        $datos = ControladorClientes::ctrlEliminarClientes($id);
+        echo json_encode($datos);
+    }
+    
 }
 
 if (isset($_POST['idClientes'])){
     $objAjaxClientes = new ajaxClientes();
     $objAjaxClientes->idClientes = $_POST['idClientes'];
-    if($_POST['edit'] == 'edit'){
+    if(!empty($_POST['edit']) &&  $_POST['edit']=='edit'){
         $objAjaxClientes->cargarDatos();
     }else{
-        #$objAjaxClientes->eliminarDatos();
+        $objAjaxClientes->eliminarDatos();
     }
     
 }
